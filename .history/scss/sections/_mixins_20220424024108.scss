@@ -1,0 +1,15 @@
+@mixin linear-gradient($direction, $from, $to) {
+  background: linear-gradient($direction, $from 0%, $to 100%);
+}
+
+@mixin breakpoint-min($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}

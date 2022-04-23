@@ -1,0 +1,24 @@
+.clients {
+  background: url(../../assets/clientbg.jpg), opacity(0.;
+
+  .clients__header {
+    @extend %title;
+    &::after {
+      @extend %separator;
+      top: 6.5rem;
+    }
+  }
+  .clients_overlay {
+    background-color: $bg1;
+    width: 100%;
+    height: 100%;
+  }
+  .client_separator {
+    position: relative;
+  }
+  .client_separator::after {
+    @extend %separator;
+    left: 0;
+    bottom: -10px;
+  }
+}

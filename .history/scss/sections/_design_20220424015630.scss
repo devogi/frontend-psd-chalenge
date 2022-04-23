@@ -1,0 +1,42 @@
+.design {
+  position: relative;
+  display: flex;
+  .design::before {
+    background-image: url(../../assets/clientbg.jpg);
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  .design__header {
+    @extend %title;
+    position: relative;
+    &::after {
+      @extend %separator;
+      top: 7.5rem;
+    }
+  }
+  .desin-overlay {
+    position: relative;
+    background-color: $layer1Color;
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint-min($sm) {
+    .designe-img {
+      bottom: -6rem;
+      right: -2rem;
+    }
+  }
+  @include breakpoint-min($lg) {
+    .designe-img {
+      bottom: -6rem;
+      right: 6rem;
+    }
+  }
+  @include breakpoint-min($xl) {
+    .designe-img {
+      bottom: -6rem;
+      right: 17rem;
+    }
+  }
+}
