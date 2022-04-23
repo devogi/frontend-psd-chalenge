@@ -1,0 +1,30 @@
+.slider {
+  background-color: $grayBg;
+  i {
+    font-size: 2rem;
+    color: $bgColor;
+    padding: 2rem;
+    border: 2px solid $bgColor;
+    margin-top: 10px;
+  }
+  .blockquote-footer::before {
+    content: "ـــــــــــــــــ";
+    color: $gradient1;
+    font-weight: 800;
+  }
+  span {
+    font-family: $Kaushan;
+  }
+  @include breakpoint-max($sm) {
+    display: none !important;
+  }
+  @include breakpoint-max($lg) {
+    i {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    .row {
+      width: 100% !important;
+    }
+  }
+}

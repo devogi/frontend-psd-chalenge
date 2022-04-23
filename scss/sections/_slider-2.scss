@@ -1,0 +1,20 @@
+.feedback {
+  .blockquote-footer::before {
+    content: "ـــــــــــــــــ";
+    color: $gradient1;
+    font-weight: 900;
+  }
+  span {
+    font-family: $Kaushan;
+  }
+  @include breakpoint-max($sm) {
+    display: none !important;
+  }
+  @include breakpoint-max($lg) {
+    .row {
+      width: 100% !important;
+    }
+  }
+}
+
+

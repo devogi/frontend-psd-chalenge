@@ -1,0 +1,38 @@
+.what_we_do {
+    .what_we_do__header {
+      @extend %title;
+    }
+    i {
+      color: $shadowColor;
+    }
+    @include breakpoint-max($lg) {
+      .what_we_do__header {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 3px;
+          background-color: $gradient1;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    @include breakpoint-max($sm) {
+      .what_we_do__header {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 3px;
+          background-color: $gradient1;
+          top: 25%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }

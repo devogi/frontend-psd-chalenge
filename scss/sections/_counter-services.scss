@@ -1,0 +1,35 @@
+.counter {
+    background-color: $bgColor;
+    @include breakpoint-max($lg) {
+      .counter_item {
+        border: none !important;
+      }
+    }
+    h3 {
+      font-size: 3rem;
+    }
+  }
+  .services {
+    .services__header {
+      @extend %title;
+      &::after {
+        @extend %separator;
+        top: 5.5rem;
+      }
+    }
+    i {
+      color: $bgColor;
+    }
+    @include breakpoint-max($sm) {
+      .services__header::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $gradient1;
+        top: 4.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }

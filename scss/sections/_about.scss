@@ -1,0 +1,36 @@
+ .about {
+    .about__header {
+      @extend %title;
+    }
+    @include breakpoint-max($sm) {
+      .about__header::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $gradient1;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .about__item {
+      .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include linear-gradient(to bottom, $gradient1, $gradient2);
+        opacity: 0;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &:hover {
+        box-shadow: 5px 5px 9px 2px $shadowColor;
+      }
+    }
+  }

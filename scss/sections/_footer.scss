@@ -1,0 +1,27 @@
+
+.footer {
+  figure {
+    margin: 0;
+    padding: 2px;
+  }
+  i {
+    color: $bgColor;
+  }
+  input {
+    padding: 0.39rem;
+    border: 1px solid $paragraphColor;
+  }
+  ::placeholder {
+    color: rgba($color: $paragraphColor, $alpha: 0.6);
+    margin-left: 10px;
+  }
+  button {
+    background-color: $bgColor;
+    border: 1px solid transparent;
+    padding: 0.39rem 1.4rem;
+    color: $white;
+  }
+  span {
+    color: $gradient1;
+  }
+}

@@ -1,0 +1,19 @@
+ .blog {
+    .blog__header {
+      @extend %title;
+      &::after {
+        @extend %separator;
+        top: 5rem;
+      }
+    }
+    i {
+      color: $bgColor;
+      font-size: 15px;
+    }
+    .calender {
+      width: 50px;
+      bottom: 5%;
+      left: -3%;
+      background-color: $bgColor;
+    }
+  }
