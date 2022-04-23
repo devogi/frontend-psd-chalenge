@@ -29,24 +29,26 @@
     width: 70%;
     margin: 3rem auto 0; }
 
-header .navbar {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 600; }
-  header .navbar .nav-item {
-    position: relative; }
-    header .navbar .nav-item a {
-      color: #fff; }
-    header .navbar .nav-item .active {
-      color: #e4cd7de6 !important; }
-      header .navbar .nav-item .active::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 14px;
-        width: 35px;
-        height: 2px;
-        background-color: #e4cd7de6; }
+header .forScroll {
+  background-color: #f38183; }
+  header .forScroll .navbar {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600; }
+    header .forScroll .navbar .nav-item {
+      position: relative; }
+      header .forScroll .navbar .nav-item a {
+        color: #fff; }
+      header .forScroll .navbar .nav-item .active {
+        color: #e4cd7de6 !important; }
+        header .forScroll .navbar .nav-item .active::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 14px;
+          width: 35px;
+          height: 2px;
+          background-color: #e4cd7de6; }
 
 header .header .carousel-indicators [data-bs-target] {
   width: 13rem;
