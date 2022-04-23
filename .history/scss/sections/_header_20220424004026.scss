@@ -35,30 +35,26 @@
 }
 
 header {
-  .forScroll {
-    background-color: #f38183;
-    .navbar {
-      font-family: $montserrat;
-      font-size: 12px;
-      font-weight: 600;
-
-      // padding: 1rem 8rem;
-      .nav-item {
-        position: relative;
-        a {
-          color: $white;
-        }
-        .active {
-          color: $gradient2 !important;
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 14px;
-            width: 35px;
-            height: 2px;
-            background-color: $gradient2;
-          }
+  .navbar {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    // padding: 1rem 8rem;
+    .nav-item {
+      position: relative;
+      a {
+        color: $white;
+      }
+      .active {
+        color: $gradient2 !important;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 14px;
+          width: 35px;
+          height: 2px;
+          background-color: $gradient2;
         }
       }
     }
